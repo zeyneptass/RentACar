@@ -18,5 +18,14 @@ namespace Business.Concrete
             _brandDal = brandDal;
         }
 
+        public List<Brand> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Brand GetCarsByBrandId(int brandId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
