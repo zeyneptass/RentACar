@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=ZEYNEP\SQLEXPRESS01;Database=RentACar;Integrated Security=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=ZEYNEP\SQLEXPRESS01;Database=RenACarDB;Integrated Security=True;TrustServerCertificate=True;");
         }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Color> Colors { get; set; }

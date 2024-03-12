@@ -20,12 +20,12 @@ namespace Business.Concrete
 
         public List<Brand> GetAll()
         {
-            throw new NotImplementedException();
+            return _brandDal.GetAll();  
         }
 
-        public Brand GetCarsByBrandId(int brandId)
+        public Brand GetById(int brandId)
         {
-            throw new NotImplementedException();
+            return _brandDal.Get(b => b.BrandId == brandId);
         }
     }
 }
